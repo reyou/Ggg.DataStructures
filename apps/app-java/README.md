@@ -1,0 +1,1 @@
+Open this folder with https://www.jetbrains.com/idea/ and enjoy!

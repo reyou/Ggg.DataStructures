@@ -9,26 +9,27 @@ public class Permutation {
     r ---> Size of a combination to be printed */
     /*Driver function to check for above function*/
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5};
-        int r = 3;
-        int n = arr.length;
-        printCombination(arr, n, r);
+        int allData[] = {1, 2, 3, 4, 5};
+        int subsetSize = 3;
+        int allDataSize = allData.length;
+        printCombination(allData, allDataSize, subsetSize);
     }
 
     // The main function that prints all combinations of size r
     // int arr[] of size n. This functions mainly uses combinationUtil()
-    private static void printCombination(int[] arr, int n, int r) {
+    private static void printCombination(int[] allData, int allDataSize, int subsetSize) {
         // A temporary array to store all combination one by one
-        int data[] = new int[r];
+        int subset[] = new int[subsetSize];
         // Print all combination using temporary array 'data[]'
-        combinationUtil(arr, data, 0, n - 1, 0, r);
+        printCombinationUtil(allData, subset, 0, allDataSize - 1, 0, subsetSize);
     }
 
-    private static void combinationUtil(int[] arr, int[] data, int start, int end, int index, int r) {
+    private static void printCombinationUtil(int[] allData, int[] subset,
+                                             int allDataStartIndex, int allDataEndIndex, int subsetIndex, int subsetSize) {
         // Current combination is ready to be printed, print it
-        if (index == r) {
-            for (int j = 0; j < r; j++) {
-                System.out.print(data[j] + " ");
+        if (subsetIndex == subsetSize) {
+            for (int j = 0; j < subsetSize; j++) {
+                System.out.print(subset[j] + " ");
             }
             System.out.println("");
             return;
@@ -38,9 +39,9 @@ public class Permutation {
         // "end-i+1 > r-index" makes sure that including one element
         // at index will make a combination with remaining elements
         // at remaining positions
-        for (int i = start; i <= end && end - i + 1 >= r - index; i++) {
-            data[index] = arr[i];
-            combinationUtil(arr, data, i + 1, end, index + 1, r);
+        for (int i = allDataStartIndex; i <= allDataEndIndex && allDataEndIndex - i + 1 >= subsetSize - subsetIndex; i++) {
+            subset[subsetIndex] = allData[i];
+            printCombinationUtil(allData, subset, i + 1, allDataEndIndex, subsetIndex + 1, subsetSize);
         }
     }
 }

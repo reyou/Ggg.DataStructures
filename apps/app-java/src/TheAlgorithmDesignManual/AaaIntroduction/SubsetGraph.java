@@ -4,21 +4,20 @@ public class SubsetGraph {
 
 
     public static void main(String[] args) {
-        char set[] = {'a', 'b', 'c', 'd', 'e'};
-        subset(set, 0, "");
+        int allData[] = {1, 2, 3, 4, 5};
+        subset(allData, 0, "");
     }
 
-    public static void subset(char[] set, int pos, String curSubset) {
-
-        if (pos < set.length) {
+    public static void subset(int[] allData, int allDataIndex, String currentSubset) {
+        if (allDataIndex < allData.length) {
             // we have two options for each item in the subset
             // exclude item from the subset
-            subset(set, pos + 1, curSubset);
+            subset(allData, allDataIndex + 1, currentSubset);
             //include item to the subset
-            subset(set, pos + 1, curSubset + " " + set[pos]);
+            subset(allData, allDataIndex + 1, currentSubset + " " + allData[allDataIndex]);
 
         } else {
-            System.out.println("{ " + curSubset + " }");
+            System.out.println("{ " + currentSubset + " }");
         }
     }
 }

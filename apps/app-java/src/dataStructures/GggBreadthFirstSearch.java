@@ -1,4 +1,5 @@
-package dataStructures;// Breadth First Traversal or BFS for a Graph
+package dataStructures;
+// Breadth First Traversal or BFS for a Graph
 // http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/
 // https://www.youtube.com/watch?v=0u78hx-66Xk
 //=============================================================================
@@ -10,7 +11,7 @@ import java.util.*;
 //=============================================================================
 public class GggBreadthFirstSearch {
     // this class represents a directed graph using adjacency lis
-    // representation
+    // representation  
     public class Graph {
         // number of vertices
         private int V;

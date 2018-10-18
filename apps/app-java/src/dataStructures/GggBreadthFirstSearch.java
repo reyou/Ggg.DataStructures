@@ -11,7 +11,7 @@ import java.util.*;
 //=============================================================================
 public class GggBreadthFirstSearch {
     // this class represents a directed graph using adjacency lis
-    // representation  
+    // representation
     public class Graph {
         // number of vertices
         private int V;

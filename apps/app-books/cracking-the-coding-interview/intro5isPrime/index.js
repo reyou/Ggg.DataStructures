@@ -3,7 +3,7 @@ function isPrime(n) {
   if (n < 2) {
     return false;
   }
-  for (var i = 1; i < n / 2; i++) {
+  for (var i = 2; i <= n / 2; i++) {
     if (n % i == 0) {
       return false;
     }
@@ -11,6 +11,6 @@ function isPrime(n) {
   return true;
 }
 
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 200; i++) {
   console.log(`result for ${i}: ${isPrime(i)}`);
 }

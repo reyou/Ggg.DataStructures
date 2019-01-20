@@ -1,0 +1,3 @@
+- algorithm
+- coding
+- design questions.

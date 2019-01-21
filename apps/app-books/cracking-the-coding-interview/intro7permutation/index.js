@@ -17,4 +17,4 @@ function permutation2(str, prefix) {
   }
 }
 
-console.log(permutation("hello"));
+console.log(permutation("abcd"));

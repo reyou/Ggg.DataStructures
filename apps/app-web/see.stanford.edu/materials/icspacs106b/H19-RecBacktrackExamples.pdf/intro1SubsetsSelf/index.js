@@ -23,5 +23,5 @@ function subset(builder, rem) {
         subset(builder + rem[i], rem.substring(i + 1));
     }
 }
-subsetprint("betul")
+subsetprint("abc")
 

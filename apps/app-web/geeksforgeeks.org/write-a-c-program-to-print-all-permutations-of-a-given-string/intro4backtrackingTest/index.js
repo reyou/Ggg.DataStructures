@@ -1,21 +1,26 @@
 /*
-abc   a (bc)   ab,ac   abc,acb
-      b (ac)   ba,bc   bac,bca
-      c (ab)  ca,cb   cab,cba
+abc
+    a
+      ab
+        abc
+      ac
+        acb
+    b
+    c
 */
 
 function permute(text) {
   let left = text;
-  let right = "";
-  explore(text, left, right);
+  let builder = "";
+  explore(left, builder);
 }
-function explore(text, left, right) {
-  if (right.length >= text.length) {
-    console.log(right);
+function explore(left, builder) {
+  if (left.length == 0) {
+    console.log(builder);
   } else {
     for (let i = 0; i < left.length; i++) {
       let remaining = left.substring(0, i) + left.substring(i + 1);
-      explore(text, remaining, right + left[i]);
+      explore(remaining, builder + left[i]);
     }
   }
 }

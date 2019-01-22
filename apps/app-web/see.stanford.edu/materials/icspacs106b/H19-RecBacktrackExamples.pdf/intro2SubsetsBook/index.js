@@ -1,11 +1,11 @@
 /* 
 abc
-    a
-        ab
-            abc
-    b
-        bc
-    c    
+ab
+ac
+a
+bc
+b
+c 
 */
 function subsets(text) {
   resolve("", text);

@@ -24,6 +24,7 @@ function FindWord2(builder, remaining) {
       }
     }
   }
+  return false;
 }
 
 let result = FindWord("cxrza");

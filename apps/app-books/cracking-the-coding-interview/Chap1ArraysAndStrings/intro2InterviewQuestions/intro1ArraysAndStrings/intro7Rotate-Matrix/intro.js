@@ -30,7 +30,7 @@ function printMatrix(matrix) {
 function rotateRight(matrix) {
   let length = matrix.length;
   for (let j = 0; j < matrix.length / 2; j++) {
-    for (let i = j; i < matrix.length - j - 1; i++) {
+    for (let i = j; i < matrix.length - 1 - j; i++) {
       let temp = matrix[j][i + j];
       // T -> R
       temp = swap(matrix, temp, i + j, length - 1 - j);

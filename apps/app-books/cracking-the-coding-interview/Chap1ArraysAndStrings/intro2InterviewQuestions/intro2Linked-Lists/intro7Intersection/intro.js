@@ -5,7 +5,7 @@ function buildLinkedList(n) {
   let random = Math.floor(Math.random() * (+max - +min)) + +min;
   node.val = random;
   var currentNode = node;
-  for (let i = 0; i < n - 1; i++) {
+  for (let i = 0; i < n; i++) {
     let nextNode = {};
     random = Math.floor(Math.random() * (+max - +min)) + +min;
     nextNode.val = random;
@@ -26,35 +26,37 @@ function print(head) {
   }
   console.log(builder);
 }
-function isPalindrome(node) {
-  let arr = nodeToArr(node);
-  for (let i = 0; i < arr.length; i++) {
-    if (i >= arr.length - 1 - i) {
-      return true;
-    }
-    let left = arr[i];
-    let right = arr[arr.length - 1 - i];
-    if (left != right) {
-      return false;
-    }
-  }
-  return true;
+function isIntersect(node1, node2) {
+  let hash = nodeToHash(node1);
+  validateIntersect(hash, node2);
 }
-function nodeToArr(node) {
-  let arr = [];
-  let counter = 0;
+function validateIntersect(hash, node2) {
   while (true) {
-    if (!node) {
+    if (!node2) {
       break;
     }
-    let val = node.val;
-    arr[counter] = val;
-    node = node.next;
-    counter++;
+    if (hash[node2.val.toString().charCodeAt(0)]) {
+      console.log("There is an instersection at:", node2.val);
+      return;
+    }
+    node2 = node2.next;
   }
-  return arr;
+  console.log("There is no intersection.");
+}
+function nodeToHash(node1) {
+  let hash = [];
+  while (true) {
+    if (!node1) {
+      break;
+    }
+    let val = node1.val;
+    hash[val.toString().charCodeAt(0)] = 1;
+    node1 = node1.next;
+  }
+  return hash;
 }
 let head = buildLinkedList(10);
+let head2 = buildLinkedList(10);
 print(head);
-let isP = isPalindrome(head);
-console.log(isP);
+print(head2);
+isIntersect(head, head2);

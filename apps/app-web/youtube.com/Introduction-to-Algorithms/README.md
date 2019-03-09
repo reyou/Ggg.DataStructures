@@ -1,0 +1,2 @@
+- Title: Lec 3 | MIT 6.046J / 18.410J Introduction to Algorithms (SMA 5503), Fall 2005 - YouTube
+  - Url: https://www.youtube.com/watch?v=-EQTVuAhSFY&feature=youtu.be

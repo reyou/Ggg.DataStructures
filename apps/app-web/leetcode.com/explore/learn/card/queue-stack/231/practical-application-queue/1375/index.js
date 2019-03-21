@@ -1,18 +1,45 @@
-function minPath(target) {
-  return Math.min(resolve(0, target, 0, 1), resolve(0, target, 0, -1));
-}
-function resolve(current, target, counter, route) {
-  if (current == -1) {
-    current = 9;
+function minPath(target, deadend) {
+  let visited = [];
+  let queue = [];
+  queue.push(0);
+  visited[0] = 1;
+  let path = 0;
+  while (true) {
+    if (queue.length === 0) {
+      return -1;
+    }
+    let children = [];
+    while (queue.length > 0) {
+      children.push(queue.shift());
+    }
+    for (let i = 0; i < children.length; i++) {
+      let val = children[i];
+      if (val === target) {
+        return path;
+      }
+      if (val === deadend) {
+        continue;
+      }
+
+      let up = val + 1;
+      if (up > 99) {
+        up = 0;
+      }
+      let down = val - 1;
+      if (down < 0) {
+        down = 99;
+      }
+      if (!visited[up]) {
+        visited[up] = 1;
+        queue.push(up);
+      }
+      if (!visited[down]) {
+        visited[down] = 1;
+        queue.push(down);
+      }
+    }
+    path++;
   }
-  if (current == 10) {
-    current = 0;
-  }
-  if (current == target) {
-    return counter;
-  }
-  let res = resolve(current + route, target, counter + 1, route);
-  return res;
 }
 
-console.log(minPath(7));
+console.log(minPath(98, 99));

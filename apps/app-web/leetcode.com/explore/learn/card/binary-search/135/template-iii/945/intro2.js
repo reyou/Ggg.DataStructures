@@ -11,8 +11,10 @@ var findClosestElements = function(arr, k, x) {
   let right = arr.length - k;
 
   while (left < right) {
-    let mid = left + Math.min((right - left) / 2);
-    if (x - arr[mid] > arr[mid + k] - x) {
+    let mid = left + Math.floor((right - left) / 2);
+    let midDiff = x - arr[mid];
+    let rightDiff = arr[mid + k] - x;
+    if (rightDiff < midDiff) {
       // mid + k is closer to x, discard mid by assigning left = mid + 1
       left = mid + 1;
     } else {
@@ -21,10 +23,12 @@ var findClosestElements = function(arr, k, x) {
     }
   }
   // left == right, which makes both left and left + k have same diff with x
+  console.log(`left: ${left} right: ${right}`);
   return arr.slice(left, left + k);
 };
-let arr = [0, 0, 0, 1, 3, 5, 6, 7, 8, 8];
-let k = 2;
-let x = 2;
-let result = findClosestElements(arr, k, x);
-console.log(result);
+
+console.log(findClosestElements([1, 2, 3, 4, 5], 4, 5));
+// console.log(findClosestElements([1, 2, 3, 4, 5, 6, 8, 9], 4, 7));
+// console.log(findClosestElements([1, 2, 3, 4, 5, 6, 7, 8], 4, 7));
+// console.log(findClosestElements([0, 0, 0, 1, 3, 5, 6, 7, 8, 8], 2, 2));
+// console.log(findClosestElements([2, 3, 3, 4, 4, 4, 4, 5], 2, 4));

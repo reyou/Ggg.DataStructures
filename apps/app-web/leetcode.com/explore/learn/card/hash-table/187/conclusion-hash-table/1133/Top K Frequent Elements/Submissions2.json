@@ -1,0 +1,20 @@
+[
+  {
+    "url": "/search?query=software+engineer",
+    "query": "software engineer",
+    "ipAddress": "201.51.85.31",
+    "city": "New York",
+    "zip": "07054",
+    "responseTime": 250,
+    "date": "6/2/2019 12:00:00 AM"
+  },
+  {
+    "url": "/index",
+    "query": null,
+    "ipAddress": "201.51.85.31",
+    "city": "New York",
+    "zip": "07054",
+    "responseTime": 250,
+    "date": "6/2/2019 12:00:00 AM"
+  }
+]

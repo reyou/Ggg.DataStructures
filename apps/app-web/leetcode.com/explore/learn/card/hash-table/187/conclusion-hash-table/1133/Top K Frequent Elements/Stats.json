@@ -1,0 +1,23 @@
+[
+  {
+    "query": "software engineer",
+    "count": "251",
+    "start": "6/2/2019 12:00:00 AM",
+    "end": "6/2/2019 01:00:00 AM",
+    "averageResponseTime": 220
+  },
+  {
+    "query": "software engineer",
+    "count": "1251",
+    "start": "6/2/2019 12:00:00 AM",
+    "end": "6/3/2019 01:00:00 AM",
+    "averageResponseTime": 150
+  },
+  {
+    "query": "software engineer",
+    "count": "854125",
+    "start": "1/1/2019 12:00:00 AM",
+    "end": "6/1/2019 12:00:00 AM",
+    "averageResponseTime": 180
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "query": "software engineer",
+    "ipAddress": "201.51.85.31",
+    "city": "New York",
+    "zip": "07054",
+    "responseTime": 250,
+    "date": "6/2/2019 12:00:00 AM"
+  },
+  {
+    "query": "qa engineer",
+    "ipAddress": "201.51.85.32",
+    "city": "Austin",
+    "zip": "04147",
+    "responseTime": 150,
+    "date": "6/2/2019 12:00:01 AM"
+  },
+  {
+    "query": "project manager",
+    "ipAddress": "201.51.85.33",
+    "city": "Paris",
+    "zip": "4517785",
+    "responseTime": 550,
+    "date": "6/2/2019 12:00:02 AM"
+  }
+]

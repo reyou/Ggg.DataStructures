@@ -32,16 +32,20 @@ function mergeLists(list1, list2) {
     if (p1 == null) {
       break;
     }
-    if (p1.val <= p2.val) {
+
+    if (p1.val < p2.val) {
       let temp = p1.next;
       p1.next = p2;
       p1 = temp;
-    } else {
-      if (p2.next == null) {
-        break;
-      }
-      p2 = p2.next;
+    } else if (p1.val == p2.val) {
+      let temp = p1.next;
+      p1.next = p2;
+      p1 = temp;
     }
+    if (p2.next == null) {
+      break;
+    }
+    p2 = p2.next;
   }
   if (p1 != null) {
     p2.next = p1;
@@ -51,10 +55,12 @@ function mergeLists(list1, list2) {
 function merge(lists, builder) {
   if (builder.length == 2) {
     let merged = mergeLists(builder[0], builder[1]);
+    console.log(JSON.stringify(merged));
+    builder[0] = merged;
     builder.pop();
     return merged;
   }
-  builder.push(lists.pop());
+  builder.push(lists.shift());
   return merge(lists, builder);
 }
 

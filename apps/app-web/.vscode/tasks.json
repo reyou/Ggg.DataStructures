@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/intro1-cSharp/intro1-web-solution/intro1/intro1.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/intro1-cSharp/intro1-web-solution/intro1/intro1.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/geeksforgeeks.org/find-minimum-number-of-coins-that-make-a-change/intro1-cSharp/intro1-web-solution/intro1/intro1.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        }
+    ]
+}

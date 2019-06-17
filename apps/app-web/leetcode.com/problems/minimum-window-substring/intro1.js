@@ -14,3 +14,6 @@ If there is such window, you are guaranteed that there will always be only one u
  * @return {string}
  */
 var minWindow = function(s, t) {};
+let input = ["ADOBECODEBANC", "ABC"];
+let result = minWindow(input[0], input[1]);
+console.log(JSON.stringify(result));

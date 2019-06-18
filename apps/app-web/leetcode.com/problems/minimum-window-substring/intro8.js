@@ -19,25 +19,50 @@ var minWindow = function(s, t) {
   let charCount = t.length;
   let begin = 0;
   let end = 0;
-
   let minStartIndex = 0;
   let minLength = Number.MAX_VALUE;
-
+  console.log({
+    function: "main",
+    s,
+    t,
+    charCount,
+    begin,
+    end,
+    minStartIndex,
+    minLength
+  });
   // create a map of each char in t to its number of occurrences
-  const charToCount = t.split("").reduce(
-    (map, val) => ({
-      ...map,
-      [val]: ++map[val] || 1
-    }),
-    {}
-  );
-
+  let charToCount = {};
+  for (let i = 0; i < t.length; i++) {
+    if (charToCount[t[i]] === undefined) {
+      charToCount[t[i]] = 1;
+    } else {
+      charToCount[t[i]] += 1;
+    }
+  }
+  console.log({
+    charToCount
+  });
   while (end < s.length) {
+    console.log({
+      function: "while",
+      end,
+      "s.length": s.length
+    });
     const currChar = s[end];
-
+    console.log({
+      function: "while",
+      currChar
+    });
     // the current char in s is in t so we decrement the count
     // we check for > 0 because a char in s may exceed the number of times it actually appears in t
     if (charToCount[currChar] > 0) {
+      console.log({
+        function: "while - character found",
+        "charToCount[currChar]": charToCount[currChar],
+        currChar,
+        execute: " charCount--"
+      });
       charCount--;
     }
 

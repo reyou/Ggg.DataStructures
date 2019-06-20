@@ -21,3 +21,4 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/apps/app-web/zhuhan0.blogspot.com/leetcode-269-alien-dictionary/intro1/intro1/target/

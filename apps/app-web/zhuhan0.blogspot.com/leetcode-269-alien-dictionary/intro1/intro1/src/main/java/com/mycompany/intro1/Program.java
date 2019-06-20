@@ -24,13 +24,16 @@ public class Program {
     input invalid: ["ztk", "ztl", "las", "kes"]
      */
     public static void main(String[] arr) {
-        RunValid();
+        String[] arr1 = new String[]{"wrt", "wrf", "er", "ett", "rftt"};
+        RunValid(arr1);
+        String[] arr2 = new String[]{"wrt", "wrf", "er", "ett", "rftt", "te"};
+        RunValid(arr2);
         RunInvalid();
     }
 
-    private static void RunValid() {
+    private static void RunValid(String[] arr1) {
         Program program = new Program();
-        String[] arr1 = new String[]{"wrt", "wrf", "er", "ett", "rftt"};
+
         String alienOrder = program.alienOrder(arr1);
         System.out.println("Valid: " + alienOrder);
     }
@@ -71,18 +74,11 @@ public class Program {
                 char parent = first.charAt(j);
                 char child = second.charAt(j);
                 if (parent != child) {
-                    boolean found = false;
                     if (!graph.get(parent).contains(child)) {
                         graph.get(parent).add(child);
                         inDegrees[child - 'a']++;
-                        found = true;
-                    } else {
-                        String message = graph.get(parent) + " contains " + child;
-                        System.out.println(message);
                     }
-                    if (found) {
-                        break;
-                    }
+                    break;
                 }
             }
 

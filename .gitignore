@@ -22,3 +22,4 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /apps/app-web/zhuhan0.blogspot.com/leetcode-269-alien-dictionary/intro1/intro1/target/
+/apps/app-books/Dynamic-Programming-for-Interviews/intro1-fibonacci-numbers/intro1-naive-recursive/intro1/target/

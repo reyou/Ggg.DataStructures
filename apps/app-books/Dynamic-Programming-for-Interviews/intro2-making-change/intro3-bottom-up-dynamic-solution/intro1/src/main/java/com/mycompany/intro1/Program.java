@@ -20,18 +20,18 @@ public class Program {
 
     private int makeChange(int[] coins, int target) {
         int[] cache = new int[target + 1];
-        for (int i = 1; i <= target; i++) {
+        for (int subTarget = 1; subTarget <= target; subTarget++) {
             int minCoins = Integer.MAX_VALUE;
             // Try removing each coin from the total
             // and see which requires the fewest
             // extra coins
             for (int coin : coins) {
-                if (i - coin >= 0) {
-                    int currCoins = cache[i - coin] + 1;
+                if (subTarget - coin >= 0) {
+                    int currCoins = cache[subTarget - coin] + 1;
                     minCoins = Math.min(minCoins, currCoins);
                 }
             }
-            cache[i] = minCoins;
+            cache[subTarget] = minCoins;
         }
         return cache[target];
     }

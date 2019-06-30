@@ -33,12 +33,14 @@ public class Program {
         cache[0][sum] = 1;
         // Initialize over previous row and update the
         // current row
-        for (int i = 1; i <= nums.length; i++) {
-            for (int j = 0; j < 2 * sum + 1; j++) {
-                int prev = cache[i - 1][j];
+        for (int row = 1; row <= nums.length; row++) {
+            for (int col = 0; col < 2 * sum + 1; col++) {
+                int prev = cache[row - 1][col];
                 if (prev != 0) {
-                    cache[i][j - nums[i - 1]] += prev;
-                    cache[i][j + nums[i - 1]] += prev;
+                    // include
+                    cache[row][col - nums[row - 1]] += prev;
+                    // exlude
+                    cache[row][col + nums[row - 1]] += prev;
                 }
             }
         }

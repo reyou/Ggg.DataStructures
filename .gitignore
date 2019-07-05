@@ -34,3 +34,5 @@ hs_err_pid*
 /apps/app-web/www.programcreek.com/leetcode-regular-expression-matching-in-java/intro1/intro1/target/
 /apps/app-web/leetcode.com/problems/regular-expression-matching/intro2-java-dynamic-programming/intro1/target/
 /apps/app-web/leetcode.com/problems/kth-largest-element-in-an-array/intro2-java-heap/intro1/target/
+/apps/app-web/leetcode.com/problems/word-ladder/intro2-java/intro1/target/
+/apps/app-web/leetcode.com/problems/word-break/intro2-java-bruteforce/intro1/target/

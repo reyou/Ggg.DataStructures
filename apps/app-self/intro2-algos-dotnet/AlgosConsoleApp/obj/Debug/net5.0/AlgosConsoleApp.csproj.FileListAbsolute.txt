@@ -1,0 +1,16 @@
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\AlgosConsoleApp.exe
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\AlgosConsoleApp.deps.json
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\AlgosConsoleApp.runtimeconfig.json
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\AlgosConsoleApp.runtimeconfig.dev.json
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\AlgosConsoleApp.dll
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\ref\AlgosConsoleApp.dll
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\bin\Debug\net5.0\AlgosConsoleApp.pdb
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.csprojAssemblyReference.cache
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.AssemblyInfoInputs.cache
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.AssemblyInfo.cs
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.csproj.CoreCompileInputs.cache
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.dll
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\ref\AlgosConsoleApp.dll
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.pdb
+D:\Git\Ggg.Github\Ggg.DataStructures\apps\app-self\intro2-algos-dotnet\AlgosConsoleApp\obj\Debug\net5.0\AlgosConsoleApp.genruntimeconfig.cache
